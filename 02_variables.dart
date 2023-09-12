@@ -5,6 +5,14 @@ void main(){
   final List<String> abilities = ['impostor'];
   final sprites = <String>['ditto/front.png','ditto/back.png'];
   
+  // dynamic == null
+  dynamic errorMessage = 'Hola';
+  errorMessage = true;
+  errorMessage = [1,2,3,4,5];
+  errorMessage = {1,2,3,4,5};
+  errorMessage = () => true;
+  errorMessage = null;
+  
   print("""
   $pokemon
   $hp
